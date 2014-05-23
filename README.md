@@ -1,4 +1,4 @@
-###Getting and Cleaning Data 
+#Getting and Cleaning Data 
 ##Course Project
 Created by Jurijs Jefimovs, Riga, MAY 2014
 
@@ -21,19 +21,19 @@ You should create one R script called run_analysis.R that does the following.
 
 ##Script description
 
-# How to run script?
+### How to run script?
 source("run_analysis.R")
 
-#How does it works?
+###How does it works?
 Script downloads zip data from site and unzip it. Then transform the data into two data sets: 
  - tidy (tidy_data.txt)
  - aggregated (aggregated _data.txt)
  
-#Tidy data format
+###Tidy data format
 - data separated by ','
 - data sets has headers
 
-#The project includes the following files
+###The project includes the following files
 - 'README.md': markdown readme file
 - 'run_analysis.R': R script
 - 'CodeBook.md': markdown file describing the data, variables and transformations made in 'run_analysis.R' script.
