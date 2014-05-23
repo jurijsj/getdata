@@ -33,6 +33,8 @@ names_v <-  as.character(features$V2)
 #Adding activity and subject names to names vector 
 names_v <- c(names_v, "activity", "subject")
 
+#Loading activity labels
+activity_labels <- read.table(".\\UCI HAR Dataset\\activity_labels.txt")
 
 #Getting positions of the mean() and std() variables ONLY!! ommiting 'meanFreq()' variable
 col_pos <- grep("mean[()]|std[()]|activity|subject", names_v)
