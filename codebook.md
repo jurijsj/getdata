@@ -1,5 +1,3 @@
-##VARIABLES
-
 Feature Selection 
 =================
 
