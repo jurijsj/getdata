@@ -6,7 +6,7 @@ unzip(zip_file)
 
 #TEST Data load
 x_test <- read.table(".\\UCI HAR Dataset\\test\\X_test.txt")
-y_test <- head
+y_test <- read.table(".\\UCI HAR Dataset\\test\\y_test.txt")
 subj_test <- read.table(".\\UCI HAR Dataset\\test\\subject_test.txt")
 
 #Train data load
@@ -40,6 +40,9 @@ activity_labels <- read.table(".\\UCI HAR Dataset\\activity_labels.txt")
 col_pos <- grep("mean[()]|std[()]|activity|subject", names_v)
 #Extracting only mean and std variables from data set
 c_data <- b_data[,col_pos]
+#Assign descriptive names to variables
+names(c_data) <- names_v[col_pos]
+
 
 #Name activities to descriptive activity names; 
 #1. using merge function join data set with activity labels
